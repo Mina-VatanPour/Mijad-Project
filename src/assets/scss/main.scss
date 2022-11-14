@@ -1,0 +1,69 @@
+/* 1.General code -----------------------------------------------------
+1.1 Typography
+1.2 Space margins and padding
+1.3 forms
+1.4 Buttons
+1.5 Section-Colors-&-Backgrounds
+1.6 Modal & popups */
+@import "general-code";
+@import "typography";
+@import "space-margins-and-padding";
+@import "forms";
+@import "buttons";
+@import "section-colors-and-backgrounds";
+@import "modal-and-popups";
+
+/* 2.Homepages --------------------------------------------------------
+2.1 Navigation
+2.2 Categories
+2.3 Recent Order
+2.4 Explore Collection
+2.5 Page Banner
+2.6 Advertisement Slider
+2.7 Blog Section
+2.8 Footer
+2.8.1 Footer Top
+2.10 Copyright */
+@import "navigation";
+@import "categories";
+@import "recent-order";
+@import "explore-collection";
+@import "page-banner";
+@import "advertisement-slider";
+@import "blog-section";
+@import "footer";
+@import "footer-top";
+@import "copy-right";
+
+//3.Blog Grid -----------------------------------------------------------
+@import "blog-grid";
+
+//4.Ex Deals ------------------------------------------------------------
+@import "ex-deals";
+
+//5.Restaurent ----------------------------------------------------------
+@import "restaurent";
+
+//6.Add Restaurent ------------------------------------------------------
+@import "add-restaurent";
+
+//7.List View -----------------------------------------------------------
+@import "list-view";
+
+//8.Login & register ----------------------------------------------------
+@import "login-and-register";
+
+//9.Checkout ------------------------------------------------------------
+@import "checkout";
+
+//10.Final Order --------------------------------------------------------
+@import "final-order";
+
+//11.Geo Locator --------------------------------------------------------
+@import "geo-locator";
+
+//12.About us -----------------------------------------------------------
+@import "about-us";
+
+
+

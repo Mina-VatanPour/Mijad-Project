@@ -1,0 +1,322 @@
+/*======================
+1.General Code
+========================*/
+
+@font-face {
+  font-family: iransans;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/fonts");
+  src: url("../fonts/fonts/IRANSansWeb.eot?#iefix") format("embedded-opentype"), url("../fonts/fonts/IRANSansWeb.woff2") format("woff2"), url("../fonts/fonts/IRANSansWeb.woff") format("woff"), url("../fonts/fonts/IRANSansWeb.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: iransans-light;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/fonts/IRANSansWeb_Light.eot");
+  src: url("../fonts/fonts/IRANSansWeb_Light.eot?#iefix") format("embedded-opentype"), url("../fonts/fonts/IRANSansWeb_Light.woff2") format("woff2"), url("../fonts/fonts/IRANSansWeb_Light.woff") format("woff"), url("../fonts/fonts/IRANSansWeb_Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: iransans-medium;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/fonts/IRANSansWeb_Medium.eot");
+  src: url("../fonts/fonts/IRANSansWeb_Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/fonts/IRANSansWeb_Medium.woff2") format("woff2"), url("../fonts/fonts/IRANSansWeb_Medium.woff") format("woff"), url("../fonts/fonts/IRANSansWeb_Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: iransans-bold;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/fonts/IRANSansWeb_Bold.eot");
+  src: url("../fonts/fonts/IRANSansWeb_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/fonts/IRANSansWeb_Bold.woff2") format("woff2"), url("../fonts/fonts/IRANSansWeb_Bold.woff") format("woff"), url("../fonts/fonts/IRANSansWeb_Bold.ttf") format("truetype");
+}
+
+p {
+  text-align: right;
+}
+
+html {
+  overflow-x: hidden;
+  font-family: iransans-light;
+}
+
+button:focus, *:focus {
+  outline: none;
+}
+
+body {
+  font-family: iransans-light;
+  margin: 0px;
+  padding: 0px;
+  font-size: 13px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #000000;
+  background: #ffffff;
+  transition: transform ease-in .4s;
+  overflow: hidden;
+  direction: rtl !important;
+  text-align: right;
+}
+
+button {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+label {
+  line-height: normal;
+}
+
+.align-item-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.after-none:after, .none {
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-bg {
+  background: #000;
+  opacity: 0.5;
+}
+
+.overlay-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.transform-center {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translate(0%, -50%);
+  z-index: 1;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before {
+  font-size: inherit;
+  margin: 0;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  box-shadow: 0 2px 14px 0px rgba(0, 0, 0, 0.1);
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  top: 52%;
+  transform: translate(0%, -48%);
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 14px;
+  font-weight: 900;
+  color: #ff0018;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-disabled {
+  display: none;
+}
+
+.back-btn button {
+  box-shadow: 0 2px 14px 0px rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.u-line {
+  border-bottom: 1px solid rgba(67, 41, 163, .2);
+}
+
+.banner-adv {
+  position: relative;
+  height: 70px;
+  background: #ff0018;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-adv .text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.banner-adv2 .close-banner, .banner-adv .close-banner {
+  cursor: pointer;
+  position: absolute;
+  right: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  display: block;
+  z-index: 9;
+  color: #fff;
+}
+
+.banner-adv2 .close-banner:before, .banner-adv2 .close-banner:after, .banner-adv .close-banner:before, .banner-adv .close-banner:after {
+  border-bottom: 2px solid;
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 19px;
+  width: 15px;
+}
+
+.banner-adv2 .close-banner:before, .banner-adv .close-banner:before {
+  transform: rotate(-45deg);
+}
+
+.banner-adv2 .close-banner:after, .banner-adv .close-banner:after {
+  transform: rotate(45deg);
+}
+
+.banner-adv2 .close-banner {
+  display: none;
+}
+
+.banner-adv2 {
+  position: relative;
+  height: 100px;
+  background: #fff;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-adv2>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.banner-adv2 .text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.banner-adv2 .text img {
+  margin: 0 25px;
+}
+
+#scrollstyle-4::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+
+#scrollstyle-4::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+#scrollstyle-4::-webkit-scrollbar-thumb {
+  background-color: #ff0018;
+}
+
+.main-box {
+  box-shadow: 0 0 0 1px rgba(67, 41, 163, .08), 0 1px 5px 0 rgba(67, 41, 163, .08);
+  border-radius: 3px;
+  background: #fff;
+}
+
+.section-header {
+  margin: 0 auto;
+  max-width: 660px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.section-header-left {
+  margin: 0;
+  text-align: right;
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+
+.section-header-right {
+  margin: 0;
+  text-align: right;
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+
+.section-header-style-2 .header-title, .section-header-left .header-title, .section-header-right .header-title, .section-header .header-title {
+  margin-bottom: 0;
+  font-size: 30px;
+}
+
+.section-header-style-2 {
+  margin: 0 auto;
+  max-width: 660px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.section-header-style-2 .sub-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+

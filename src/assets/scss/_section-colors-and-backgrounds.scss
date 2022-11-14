@@ -1,0 +1,77 @@
+/*==================
+1.5. Section-Colors-&-Backgrounds
+====================*/
+
+.bg-light-white {
+  background-color: #f4f4f4;
+}
+
+.bg-light-theme {
+  background-color: #fbfbfc;
+}
+
+.bg-light-green {
+  background-color: #ff0018;
+}
+
+.bg-red {
+  background-color: #ff0000;
+}
+
+.bg-gradient-red {
+  background-image: linear-gradient(to right, #f20000, #a20000);
+}
+
+.bg-yellow {
+  background-color: #ffc000;
+}
+
+.bg-green {
+  background-color: #4aa110;
+}
+
+.bg-gradient-green {
+  background-image: linear-gradient(to bottom, #499a14, #476d2d);
+}
+
+.bg-gradient-orange {
+  background-image: linear-gradient(to bottom, #c55a11, #ed7d31);
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+/*Colors*/
+
+.text-light-black {
+  color: #000000de;
+}
+
+.text-orange {
+  color: #fb6100;
+}
+
+.text-custom-white {
+  color: #ffffff;
+}
+
+.text-light-white {
+  color: #6b6b83;
+}
+
+.text-dark-white {
+  color: #00000059;
+}
+
+.text-yellow {
+  color: #fcb71b;
+}
+
+.text-light-green {
+  color: #ff0018;
+}
+
+.text-success {
+  color: #13aa37;
+}

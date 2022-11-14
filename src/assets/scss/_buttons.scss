@@ -1,0 +1,226 @@
+/*==================
+1.4. Buttons
+====================*/
+
+.btn-first {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 6px 16px 5px;
+  font-size: 13px;
+  line-height: 1.595;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.white-btn {
+  border-color: rgba(67, 41, 163, .2);
+  background: #fff;
+}
+
+.white-btn:hover, .white-btn:focus {
+  border-color: #ff0018;
+}
+
+.green-btn {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.green-btn:hover, .green-btn:focus {
+  border-color: #ff0018;
+  background: #fff;
+  color: #ff0018;
+}
+
+.paypal-btn {
+  color: #fff;
+  background-color: #ffc439;
+  border-color: #ffc439;
+}
+
+.paypal-btn:hover, .paypal-btn:focus {
+  border-color: #ffc439;
+  background: #ffc439;
+  color: #fff;
+}
+
+.category-btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #ffffff94;
+  border: 1px solid transparent;
+  padding: 8px 16px;
+  font-size: 16px;
+  line-height: 1.595;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  color: #000;
+  font-weight: 600;
+}
+
+.category-btn:hover, .category-btn:focus {
+  border-color: #ff0018;
+  background: #ff0018;
+  color: #fff;
+}
+
+.btn-second {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 9px 15px 8px;
+  font-size: 14px;
+  line-height: 1.51741;
+  border-radius: 4px;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-weight: 500;
+  position: relative;
+}
+
+.btn-second img {
+  float: left;
+  left: -8px;
+  position: relative;
+  width: 22px;
+  height: 22px;
+}
+
+.btn-submit {
+  color: #fff;
+  background: #ff0018;
+  border-color: #ff0018;
+}
+
+.btn-submit:hover, .btn-submit:focus {
+  border-color: #bc2634;
+  background: #bc2634;
+  color: #fff;
+}
+
+.btn-facebook {
+  color: #fff;
+  background: #3b5998;
+  border-color: #3b5998;
+}
+
+.btn-facebook:hover, .btn-facebook:focus {
+  border-color: #2d4373;
+  background: #2d4373;
+  color: #fff;
+}
+
+.btn-google {
+  color: #fff;
+  background: #4285f4;
+  border-color: #4285f4;
+}
+
+.btn-google:focus, .btn-google:hover {
+  border-color: #1266f1;
+  background: #1266f1;
+  color: #fff;
+}
+
+span.circle-tag {
+  height: 36px;
+  width: 36px;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+span.square-tag>img, span.rectangle-tag>img, span.circle-tag>img {
+  padding: 8px;
+}
+
+span.rectangle-tag {
+  height: 30px;
+  width: auto;
+  border-radius: 3px;
+  font-size: 12px;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0 8px;
+}
+
+span.rectangle-tag+span.rectangle-tag {
+  margin: 0 2px;
+}
+
+span.square-tag {
+  height: 35px;
+  width: 40px;
+  background: transparent;
+  border-radius: 3px;
+  font-size: 16px;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+span.share-tag {
+  height: 36px;
+  width: 36px;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+span.deal-tag {
+  border-radius: 3px;
+  padding: 4px 10px;
+  background-color: #fff;
+  box-shadow: 0 1px 5px 0 rgba(66, 41, 163, .08), 0 0 0 1px rgba(66, 41, 163, .08);
+}
+
+span.add-product {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ff0018;
+  background-color: #fff;
+  color: #ff0018;
+  box-shadow: 0 1px 5px 0 rgba(66, 41, 163, .08), 0 0 0 1px rgba(66, 41, 163, .08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+span.add-product i {
+  font-size: 12px;
+}
+
+span.type-tag {
+  padding: 3px 15px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 5px 5px 0px 0px;
+  cursor: pointer;
+  right: 10px;
+}

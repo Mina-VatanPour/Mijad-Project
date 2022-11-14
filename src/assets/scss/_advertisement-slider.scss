@@ -1,0 +1,24 @@
+/*Advertisement Slider*/
+
+.advertisement-slider {
+  height: 100%;
+}
+
+.advertisement-slider .swiper-wrapper .swiper-slide .large-product-box {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.advertisement-slider .swiper-wrapper .swiper-slide .large-product-box .content-wrapper {
+  z-index: 1;
+  position: absolute;
+  bottom: 20px;
+}
+
+.advertisement-slider .swiper-wrapper .swiper-slide .large-product-box .tag-box {
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+}

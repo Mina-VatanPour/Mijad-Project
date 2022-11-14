@@ -1,0 +1,180 @@
+/*======================
+1.1 Typography
+========================*/
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 20px;
+  font-family: iransans-light;
+  font-weight: 500;
+  color: #000000de;
+}
+
+h1 {
+  font-size: 3.5vw;
+  line-height: normal;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 26px;
+}
+
+h5 {
+  font-size: 12pt;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  font-family: iransans-light;
+}
+
+a {
+  color: #ff0018;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:focus, a:hover {
+  color: #bc2634;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+ul li, ol li {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  list-style: none;
+}
+
+blockquote {
+  background-color: #f4f4f4;
+  position: relative;
+  padding: 3rem;
+  margin: 2rem 0;
+  border: #4329a333 solid 1px;
+}
+
+blockquote p {
+  font-size: 32px;
+  line-height: 45px;
+  font-style: normal;
+  margin: 0;
+  word-break: break-word;
+  text-align: center;
+}
+
+blockquote h6 {
+  color: #000;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 3px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+table {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 900;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  font-family: iransans-medium;
+}
+
+.title-2 {
+  display: flex;
+  align-items: baseline;
+}
+
+.title-2 small {
+  margin-left: 30px;
+}
+
+/*pagination*/
+
+.custom-pagination {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-pagination .page-link {
+  padding: 10px 20px;
+  color: #ff0018;
+}
+
+.custom-pagination .page-item .page-link:hover, .custom-pagination .page-item.active .page-link {
+  background: #ff0018;
+  color: #fff;
+  border-color: #ff0018;
+}

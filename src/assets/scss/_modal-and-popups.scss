@@ -1,0 +1,82 @@
+/*======================
+1.6 Modal & Popups
+========================*/
+
+#offer .modal-dialog {
+  max-width: 500px;
+  margin: 1.75rem auto;
+}
+
+.modal.show .modal-dialog {
+  -webkit-transform: none;
+  transform: none;
+}
+
+#offer.modal {
+  height: auto;
+  top: 50%;
+  left: 0%;
+  right: 0;
+  transform: translate(0%, -50%);
+}
+
+.offer-content {
+  text-align: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 20px 10px 10px;
+  position: relative;
+  min-height: 100%;
+  background: linear-gradient(0deg, #6a1d89a8, #6a1d89a8), url('../img/offer.jpg');
+  background-size: cover;
+}
+
+#offer .modal-header .close {
+  position: absolute;
+  right: 0;
+  padding: 20px;
+  margin: 0;
+}
+
+.offer-content h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.offer-content h2 small {
+  display: block;
+  font-size: 30px;
+  text-transform: lowercase;
+}
+
+#address-box .modal-content, #search-box .modal-content {
+  min-height: 85vh;
+  background: #fbfbfc;
+}
+
+#address-box .modal-header, #search-box .modal-header {
+  display: block;
+  box-shadow: 0 0 0 1px rgba(67, 41, 163, .08), 0 1px 5px 0 rgba(67, 41, 163, .08);
+}
+
+#address-box .modal-header .close, #search-box .modal-header .close {
+  margin: 0;
+  display: block;
+  width: 100%;
+  text-align: left;
+  color: #ff0018;
+  opacity: 1;
+  padding: 0;
+  font-size: 35px;
+  font-weight: 200;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+#address-box .modal-title, #search-box .modal-title {
+  font-size: 20px;
+}
+
+#address-box .modal-body, #search-box .modal-body {
+  padding: 1rem 0;
+}
