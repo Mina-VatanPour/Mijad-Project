@@ -1,150 +1,160 @@
 /*======================
 3. Blog Grid
 ========================*/
-
-.breadcrumb .breadcrumb-item {
-  margin: 0;
-}
-
 .breadcrumb {
   margin: -20px;
-  background-color: #fff;
+  background-color: $white;
   padding: 1.5rem 20px;
-  border-bottom: 1px solid #4329a333;
+  border-bottom: 1px solid $purple-dark;
   border-radius: 0;
   margin-bottom: 20px;
-}
 
-.breadcrumb .breadcrumb-item a {
-  color: #131313;
-  font-weight: 600;
+  .breadcrumb-item {
+    margin: 0;
+
+    a {
+      color: $black-131313;
+      font-weight: 600;
+    }
+  }
 }
 
 .breadcrumb-item.active {
-  color: #ff0018;
+  color: $red-ff0018;
 }
 
-.our-articles .blog-page-banner {
-  position: relative;
-  background-image: url('../img/banner/banner-5.jpg');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: calc(280px * 2);
-  background-attachment: fixed;
+.our-articles {
+  .blog-page-banner {
+    position: relative;
+    background-image: url('../img/banner/banner-5.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(280px * 2);
+    background-attachment: fixed;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, .6), transparent);
+    }
+  }
+
+  .blog-inner {
+    position: relative;
+    margin-top: -450px;
+    display: flex;
+  }
+
+  .blog-services-wrapper {
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+
+    .post-meta {
+      display: flex;
+      align-items: center;
+      padding: 20px 20px 0;
+    }
+
+    .author-meta {
+      margin-left: 20px;
+    }
+  }
 }
 
-.our-articles .blog-page-banner:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, .6), transparent);
+.side-blog {
+  .side-post {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .content-wrap {
+    flex: 0 0 calc(100% - 100px);
+    max-width: calc(100% - 100px);
+  }
+
+  .thumb-img {
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 85px;
+    max-width: 100px;
+    margin-left: 15px;
+  }
 }
 
-.our-articles .blog-inner {
-  position: relative;
-  margin-top: -450px;
-  display: flex;
+.side-bar {
+  .blog-tags a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: $purple-4329a333 solid 1px;
+    margin: 0 5px 10px 0;
+    background: $white-f5f5f5;
+    font-weight: 500;
+    color: $black;
+  }
+
+  .برترین-blog-cat li {
+    display: flex;
+    position: relative;
+
+    a {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      position: relative;
+      text-transform: capitalize;
+      justify-content: space-between;
+    }
+  }
+
+  .large-product-box {
+    position: relative;
+    height: auto;
+    padding-bottom: 0;
+    right: 0;
+    left: 0;
+
+    .category-type a {
+      bottom: 0;
+      position: absolute;
+      margin-bottom: 15px;
+    }
+  }
+
+  .main-padding {
+    padding: 15px;
+
+    img {
+      width: 110px;
+    }
+  }
+
+  .inner-wrapper {
+    z-index: 1;
+
+    .main-page .login-box {
+      display: block;
+    }
+  }
+
+  .main-banner {
+    height: auto;
+
+    .footer-img {
+      max-width: 200px;
+    }
+  }
+
+  .section-2 {
+    height: auto;
+  }
 }
 
-.side-blog .side-post {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-}
 
-.side-blog .content-wrap {
-  flex: 0 0 calc(100% - 100px);
-  max-width: calc(100% - 100px);
-}
-
-.side-blog .thumb-img {
-  position: relative;
-  overflow: hidden;
-  flex: 0 0 85px;
-  max-width: 100px;
-  margin-left: 15px;
-}
-
-.side-bar .blog-tags a {
-  display: inline-block;
-  padding: 5px 10px;
-  border: #4329a333 solid 1px;
-  margin: 0 5px 10px 0;
-  background: #f5f5f5;
-  font-weight: 500;
-  color: #000000de;
-}
-
-.side-bar .برترین-blog-cat li {
-  display: flex;
-  position: relative;
-}
-
-.side-bar .برترین-blog-cat li a {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  position: relative;
-  text-transform: capitalize;
-  justify-content: space-between;
-}
-
-.side-bar .large-product-box {
-  position: relative;
-  height: auto;
-  padding-bottom: 0;
-  right: 0;
-  left: 0;
-}
-
-.side-bar .large-product-box .category-type a {
-  bottom: 0;
-  position: absolute;
-  margin-bottom: 15px;
-}
-
-.side-bar .main-padding {
-  padding: 15px;
-}
-
-.side-bar .inner-wrapper {
-  z-index: 1;
-}
-
-.side-bar .main-banner, .side-bar .section-2 {
-  height: auto;
-}
-
-.side-bar .main-padding img {
-  width: 110px;
-}
-
-.side-bar .main-banner .footer-img {
-  max-width: 200px;
-}
-
-.side-bar .inner-wrapper .main-page .login-box {
-  display: block;
-}
-
-.our-articles .blog-services-wrapper {
-  box-sizing: border-box;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.our-articles .blog-services-wrapper .post-meta {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  padding-bottom: 0;
-}
-
-.our-articles .blog-services-wrapper .author-meta {
-  margin-left: 20px;
-}

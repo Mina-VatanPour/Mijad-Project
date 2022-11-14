@@ -17,36 +17,37 @@
 }
 
 .white-btn {
-  border-color: rgba(67, 41, 163, .2);
-  background: #fff;
-}
+  border-color: $purple-dark;
+  background: $white;
 
-.white-btn:hover, .white-btn:focus {
-  border-color: #ff0018;
+  &:hover, &:focus {
+    border-color: $red-ff0018;
+  }
 }
 
 .green-btn {
-  color: #fff;
-  background-color: #28a745;
-  border-color: #28a745;
-}
+  color: $white;
+  background-color: $green-28a745;
+  border-color: $green-28a745;
 
-.green-btn:hover, .green-btn:focus {
-  border-color: #ff0018;
-  background: #fff;
-  color: #ff0018;
+  &:hover, &:focus {
+    border-color: $red-ff0018;
+    background: $white;
+    color: $red-ff0018;
+  }
 }
 
 .paypal-btn {
-  color: #fff;
-  background-color: #ffc439;
-  border-color: #ffc439;
-}
+  color: $white;
+  background-color: $yellow-ffc439;
+  border-color: $yellow-ffc439;
 
-.paypal-btn:hover, .paypal-btn:focus {
-  border-color: #ffc439;
-  background: #ffc439;
-  color: #fff;
+  &:hover, &:focus {
+    border-color: $yellow-ffc439;
+    background: $yellow-ffc439;
+    color: $white;
+  }
+
 }
 
 .category-btn {
@@ -54,21 +55,21 @@
   text-align: center;
   vertical-align: middle;
   user-select: none;
-  background-color: #ffffff94;
+  background-color: $gray-ffffff94;
   border: 1px solid transparent;
   padding: 8px 16px;
   font-size: 16px;
   line-height: 1.595;
   border-radius: .25rem;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  color: #000;
+  color: $black;
   font-weight: 600;
-}
 
-.category-btn:hover, .category-btn:focus {
-  border-color: #ff0018;
-  background: #ff0018;
-  color: #fff;
+  &:hover, &:focus {
+    border-color: $red-ff0018;
+    background: $red-ff0018;
+    color: $white;
+  }
 }
 
 .btn-second {
@@ -83,144 +84,162 @@
   line-height: 1.51741;
   border-radius: 4px;
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  vertical-align: middle;
   white-space: nowrap;
   font-weight: 500;
   position: relative;
-}
 
-.btn-second img {
-  float: left;
-  left: -8px;
-  position: relative;
-  width: 22px;
-  height: 22px;
+  img {
+    float: left;
+    left: -8px;
+    position: relative;
+    width: 22px;
+    height: 22px;
+  }
+
 }
 
 .btn-submit {
-  color: #fff;
-  background: #ff0018;
-  border-color: #ff0018;
-}
+  color: $white;
+  background: $red-ff0018;
+  border-color: $red-ff0018;
 
-.btn-submit:hover, .btn-submit:focus {
-  border-color: #bc2634;
-  background: #bc2634;
-  color: #fff;
+  &:hover, &:focus {
+    border-color: $red-bc2634;
+    background: $red-bc2634;
+    color: $white;
+  }
 }
 
 .btn-facebook {
-  color: #fff;
-  background: #3b5998;
-  border-color: #3b5998;
-}
+  color: $white;
+  background: $blue-3b5998;
+  border-color: $blue-3b5998;
 
-.btn-facebook:hover, .btn-facebook:focus {
-  border-color: #2d4373;
-  background: #2d4373;
-  color: #fff;
+  &:hover, &:focus {
+    border-color: $blue-2d4373;
+    background: $blue-2d4373;
+    color: $white;
+  }
+
 }
 
 .btn-google {
-  color: #fff;
-  background: #4285f4;
-  border-color: #4285f4;
+  color: $white;
+  border-color: $blue-4285f4;
+  background: $blue-4285f4;
+
+  &:focus, &:hover {
+    border-color: $blue-1266f1;
+    background: $blue-1266f1;
+    color: $white;
+  }
 }
 
-.btn-google:focus, .btn-google:hover {
-  border-color: #1266f1;
-  background: #1266f1;
-  color: #fff;
+span {
+  &.circle-tag {
+    height: 36px;
+    width: 36px;
+    background: $white;
+    border-radius: 50%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    > img {
+      @extend %common-F;
+    }
+  }
+
+  &.rectangle-tag {
+    height: 30px;
+    width: auto;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0 8px;
+
+    > img {
+      @extend %common-F;
+    }
+
+    & + span.rectangle-tag {
+      margin: 0 2px;
+    }
+  }
+
+  &.square-tag {
+    height: 35px;
+    width: 40px;
+    background: transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    > img {
+      @extend %common-F;
+    }
+  }
+
+  &.share-tag {
+    height: 36px;
+    width: 36px;
+    background: $white;
+    border-radius: 50%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &.deal-tag {
+    border-radius: 3px;
+    padding: 4px 10px;
+    background-color: $white;
+    box-shadow: 0 1px 5px 0 $purple-darken, 0 0 0 1px $purple-darken;
+  }
+
+  &.add-product {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    border: 1px solid $red-ff0018;
+    background-color: $white;
+    color: $red-ff0018;
+    box-shadow: 0 1px 5px 0 $purple-darken, 0 0 0 1px $purple-darken;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    i {
+      font-size: 12px;
+    }
+  }
+
+  &.type-tag {
+    padding: 3px 15px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    right: 10px;
+  }
 }
 
-span.circle-tag {
-  height: 36px;
-  width: 36px;
-  background: #fff;
-  border-radius: 50%;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
 
-span.square-tag>img, span.rectangle-tag>img, span.circle-tag>img {
+//وراثت ها
+//common style between (span.square-tag > img) and (span.rectangle-tag > img) and (span.circle-tag > img) named : %common-F
+%common-F {
   padding: 8px;
-}
-
-span.rectangle-tag {
-  height: 30px;
-  width: auto;
-  border-radius: 3px;
-  font-size: 12px;
-  margin-right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding: 0 8px;
-}
-
-span.rectangle-tag+span.rectangle-tag {
-  margin: 0 2px;
-}
-
-span.square-tag {
-  height: 35px;
-  width: 40px;
-  background: transparent;
-  border-radius: 3px;
-  font-size: 16px;
-  margin-right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-span.share-tag {
-  height: 36px;
-  width: 36px;
-  background: #fff;
-  border-radius: 50%;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-span.deal-tag {
-  border-radius: 3px;
-  padding: 4px 10px;
-  background-color: #fff;
-  box-shadow: 0 1px 5px 0 rgba(66, 41, 163, .08), 0 0 0 1px rgba(66, 41, 163, .08);
-}
-
-span.add-product {
-  border-radius: 50%;
-  width: 25px;
-  height: 25px;
-  border: 1px solid #ff0018;
-  background-color: #fff;
-  color: #ff0018;
-  box-shadow: 0 1px 5px 0 rgba(66, 41, 163, .08), 0 0 0 1px rgba(66, 41, 163, .08);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-span.add-product i {
-  font-size: 12px;
-}
-
-span.type-tag {
-  padding: 3px 15px;
-  position: absolute;
-  bottom: 0;
-  border-radius: 5px 5px 0px 0px;
-  cursor: pointer;
-  right: 10px;
 }
