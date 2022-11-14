@@ -1,152 +1,181 @@
 /*footer*/
 
 footer {
-  border-top: 1px solid rgba(67, 41, 163, .2);
+  border-top: 1px solid $purple-dark;
+
+  .ft-logo-box {
+    display: flex;
+    align-items: center;
+    padding-bottom: 80px;
+
+    .ft-logo {
+      margin-right: 25px;
+    }
+  }
+
+  .ft-social-media {
+    display: block;
+    align-items: center;
+    height: 100%;
+    padding-top: 80px;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      li {
+        margin-left: 15px;
+        border: 1px solid $gray-ada3a3;
+        transition: 0.3s;
+
+        a {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $gray-ada3a3;
+          transition: 0.3s;
+          text-decoration: none;
+
+          i {
+            font-size: 18px;
+          }
+        }
+
+        &:first-child {
+          margin-left: 15px;
+        }
+
+        &:hover {
+          border-color: $red-ff0018;
+          transform: translateY(-5px);
+          transition: 0.3s;
+
+          a {
+            color: $red-ff0018;
+            transform: rotate(25deg);
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+  }
+
+  .subscribe_form {
+    button {
+      position: absolute;
+      left: 3px;
+      top: 3px;
+      z-index: 1;
+    }
+
+    input {
+      padding: 10px 5px 10px 10px;
+    }
+  }
+
+  .footer-links {
+    .appimg {
+      margin-bottom: 10px;
+    }
+
+    @extend %common-M;
+
+    ul {
+      @extend %common-N ;
+
+      li {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .footer-contact {
+    @extend %common-M;
+
+    ul {
+      @extend %common-N;
+    }
+
+    li {
+      margin-bottom: 10px;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+
 }
 
-footer .ft-logo-box {
-  display: flex;
-  align-items: center;
+.copyright {
+  .medewithlove {
+    overflow: hidden;
+
+    a {
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+
+      i {
+        color: $red;
+      }
+
+      &:hover {
+        i {
+          --webkit-transform: scale(1.2);
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
 }
 
-footer .ft-logo-box .ft-logo {
-  margin-right: 25px;
+.hm-list {
+  &.hm-instagram {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+
+    li {
+      position: relative;
+      margin-right: 0;
+      overflow: hidden;
+
+      img {
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        border-radius: 0;
+      }
+
+      &:hover {
+        img {
+          --webkit-transform: scale(1.2);
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 15px;
+  }
 }
 
-footer .ft-social-media {
-  display: block;
-  align-items: center;
-  height: 100%;
+//وراثت ها
+/*common style between (footer .footer-links)
+ and ( footer .footer-contact). named : %common-M */
+%common-M {
   padding-top: 80px;
 }
 
-footer .ft-social-media ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-footer .ft-social-media ul li {
-  margin-left: 15px;
-  border: 1px solid #ada3a3;
-  transition: 0.3s;
-}
-
-footer .ft-social-media ul li a {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ada3a3;
-  transition: 0.3s;
-  text-decoration: none;
-}
-
-footer .ft-social-media ul li a i {
-  font-size: 18px;
-}
-
-footer .ft-social-media ul li:first-child {
-  margin-left: 15px;
-}
-
-footer .subscribe_form button {
-  position: absolute;
-  left: 3px;
-  top: 3px;
-  z-index: 1;
-}
-
-.copyright .medewithlove {
-  overflow: hidden;
-}
-
-.copyright .madewithlove a {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.copyright .medewithlove a:hover i {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-.copyright .medewithlove a i {
-  color: red;
-}
-
-.hm-list.hm-instagram {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0;
-}
-
-.hm-list.hm-instagram li {
-  overflow: hidden;
-}
-
-.hm-list.hm-instagram li {
-  position: relative;
-  margin-right: 0;
-}
-
-.hm-list li {
-  display: inline-block;
-  margin-right: 15px;
-}
-
-.hm-list.hm-instagram li img {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  border-radius: 0px;
-}
-
-.hm-list.hm-instagram li:hover img {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-footer .subscribe_form input {
-  padding: 10px 5px 10px 10px;
-}
-
-footer .ft-social-media ul li:hover {
-  border-color: #ff0018;
-  transform: translateY(-5px);
-  transition: 0.3s;
-}
-
-footer .ft-social-media ul li:hover a {
-  color: #ff0018;
-  transform: rotate(25deg);
-  transition: 0.3s;
-}
-
-footer .ft-logo-box {
-  padding-bottom: 80px;
-}
-
-footer .footer-links, footer .footer-contact {
-  padding-top: 80px;
-}
-
-footer .footer-links ul, footer .footer-contact ul {
+/*common style between (footer .footer-links ul)
+ and ( footer .footer-contact ul). named : %common-N */
+%common-N {
   margin-bottom: 10px;
 }
 
-footer .footer-contact li {
-  margin-bottom: 10px;
-}
 
-footer .footer-contact li a {
-  text-decoration: underline;
-}
-
-footer .footer-links ul li {
-  margin-bottom: 5px;
-}
-
-footer .footer-links .appimg {
-  margin-bottom: 10px;
-}
