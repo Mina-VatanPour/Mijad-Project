@@ -1,13 +1,27 @@
-
 /*=========================
 10. Final Order
 ===========================*/
 
-.final-order .title2 span {
-  margin-right: 140px;
-  display: inline-block;
+.final-order {
+  .title2 {
+    span {
+      margin-right: 140px;
+      display: inline-block;
+    }
+  }
+
+  .advertisement-img {
+    @extend %common-L ;
+
+    img {
+      @extend %common-L ;
+    }
+  }
 }
 
-.final-order .advertisement-img, .final-order .advertisement-img img {
+//وراثت ها
+//common style between (.final-order .advertisement-img)
+// and (.final-order .advertisement-img img). named : %common-L
+%common-L {
   height: 100%;
 }

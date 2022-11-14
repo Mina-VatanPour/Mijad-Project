@@ -1,35 +1,39 @@
 /*======================
 4. Ex Deals
 ========================*/
+.exclusive-deals {
+  .deals-heading {
+    padding: 15px 0;
+  }
 
-.exclusive-deals .deals-heading {
-  padding: 15px 0;
-}
-
-.exclusive-deals .deals-image {
-  display: flex;
-  align-self: center;
-  align-items: center;
+  .deals-image {
+    display: flex;
+    align-self: center;
+    align-items: center;
+  }
 }
 
 /*product-box-2*/
 
 .product-box-2 {
   display: flex;
+
+  .product-img {
+    width: 120px;
+    height: 112px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
 }
 
-.product-box-2 .product-img {
-  width: 120px;
-  height: 112px;
-}
 
-.product-box-2 .product-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.local-deals .btn-first {
-  margin: 20px auto 40px;
+.local-deals {
+  .btn-first {
+    margin: 20px auto 40px;
+  }
 }
