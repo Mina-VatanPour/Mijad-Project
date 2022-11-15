@@ -5,80 +5,92 @@
 .inner-wrapper {
   height: inherit;
   position: relative;
+
+  .main-page {
+    .top-nav {
+      position: absolute;
+      top: 64px;
+      display: flex;
+      right: 70px;
+
+      h5 {
+        margin-right: 30px;
+      }
+    }
+
+    .login-box {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      .input-group {
+        margin: 0 -4px;
+
+        .input-group2 {
+          display: flex;
+          @extend %common-V ;
+        }
+      }
+
+      .input-group-prepend {
+        height: 49px;
+        min-width: 50px;
+        flex-basis: 50px;
+        border: 1px solid $gray-8f8fa1;
+        border-right: 0;
+        border-radius: 4px 0 0 4px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: none;
+
+        .input-group-text {
+          line-height: 1.5;
+          font-size: 20px;
+          background: transparent;
+          border: none;
+        }
+      }
+
+      .input-group-append {
+        @extend %common-V ;
+
+        button {
+          white-space: normal;
+        }
+      }
+    }
+  }
 }
 
 .main-padding {
   padding: 64px 100px;
 }
 
-.section-2, .main-banner {
+.section-2 {
   height: 100vh;
 }
 
-.main-banner .main-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+.main-banner {
+  height: 100vh;
+
+  .main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .footer-img {
+    position: absolute;
+    bottom: 0;
+    max-width: 340px;
+    right: 0;
+  }
 }
 
-.main-banner .footer-img {
-  position: absolute;
-  bottom: 0;
-  max-width: 340px;
-  right: 0;
-}
-
-.inner-wrapper .main-page .top-nav {
-  position: absolute;
-  top: 64px;
-  display: flex;
-  right: 70px;
-}
-
-.inner-wrapper .main-page .top-nav h5 {
-  margin-right: 30px;
-}
-
-.inner-wrapper .main-page .login-box {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.inner-wrapper .main-page .login-box .input-group-prepend {
-  height: 49px;
-  min-width: 50px;
-  flex-basis: 50px;
-  border: 1px solid #8f8fa1;
-  border-right: 0;
-  border-radius: 4px 0 0 4px;
-  /* display: none; */
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  display: none;
-}
-
-.inner-wrapper .main-page .login-box .input-group-prepend .input-group-text {
-  line-height: 1.5;
-  font-size: 20px;
-  background: transparent;
-  border: none;
-}
-
-.inner-wrapper .main-page .login-box .input-group .input-group2 {
-  display: flex;
-}
-
-.inner-wrapper .main-page .login-box .input-group {
-  margin: 0 -4px
-}
-
-.inner-wrapper .main-page .login-box .input-group .input-group2, .inner-wrapper .main-page .login-box .input-group-append {
+//وراثت ها
+//common style between (.inner-wrapper .main-page .login-box .input-group .input-group2) and (.inner-wrapper .main-page .login-box .input-group-append). named : %common-V
+%common-V {
   padding: 0 8px;
-}
-
-.inner-wrapper .main-page .login-box .input-group-append button {
-  white-space: normal;
 }
