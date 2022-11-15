@@ -1,53 +1,63 @@
-
 /*Page Banner*/
 
 .banner-1 {
   height: 700px;
   width: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .content-wrapper {
+    box-shadow: 0 0 0 1px $purple-darken, 0 1px 5px 0 $purple-darken;
+    border-radius: 3px;
+
+    .content-box {
+      .input-group {
+        margin: 0 -8px;
+
+        &-prepend {
+          height: 48px;
+          min-width: 44px;
+          flex-basis: 44px;
+          border: 1px solid $gray-8f8fa1;
+          border-left: 0;
+          border-radius: 0 4px 4px 0;
+          display: none;
+
+          .input-group-text {
+            line-height: 1.5;
+            font-size: 20px;
+            background: transparent;
+            border: none;
+          }
+
+          @extend %common-III;
+        }
+
+        .input-group2 {
+          display: flex;
+
+          @extend %common-III;
+        }
+      }
+    }
+  }
+
+  .right-side-content {
+    h1 {
+      font-size: 60px;
+      line-height: 1.2;
+    }
+  }
 }
 
-.banner-1 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.banner-1 .content-wrapper {
-  box-shadow: 0 0 0 1px rgba(67, 41, 163, .08), 0 1px 5px 0 rgba(67, 41, 163, .08);
-  border-radius: 3px;
-}
-
-.banner-1 .content-wrapper .content-box .input-group {
-  margin: 0 -8px;
-}
-
-.banner-1 .content-wrapper .content-box .input-group-prepend {
-  height: 48px;
-  min-width: 44px;
-  flex-basis: 44px;
-  border: 1px solid #8f8fa1;
-  border-left: 0;
-  border-radius: 0px 4px 4px 0;
-  display: none;
-}
-
-.banner-1 .content-wrapper .content-box .input-group-prepend .input-group-text {
-  line-height: 1.5;
-  font-size: 20px;
-  background: transparent;
-  border: none;
-}
-
-.banner-1 .content-wrapper .content-box .input-group .input-group2 {
-  display: flex;
-}
-
-.banner-1 .content-wrapper .content-box .input-group .input-group2, .banner-1 .content-wrapper .content-box .input-group-append {
+//common style between (.banner-1 .content-wrapper .content-box .input-group .input-group2)
+// and (.banner-1 .content-wrapper .content-box .input-group-append) named : %common-III
+%common-III {
   padding: 0 8px;
 }
 
-.banner-1 .right-side-content h1 {
-  font-size: 60px;
-  line-height: 1.2;
-}
