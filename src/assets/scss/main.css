@@ -11721,47 +11721,42 @@ span.circle-tag > img, span.rectangle-tag > img, span.square-tag > img {
 /*======================
 1.6 Modal & Popups
 ========================*/
-#offer .modal-dialog {
-  max-width: 500px;
-  margin: 1.75rem auto;
-}
-
-.modal.show .modal-dialog {
-  -webkit-transform: none;
-  transform: none;
-}
-
 #offer.modal {
   height: auto;
   top: 50%;
-  left: 0%;
+  left: 0;
   right: 0;
   transform: translate(0%, -50%);
 }
-
-.offer-content {
-  text-align: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  padding: 20px 10px 10px;
-  position: relative;
-  min-height: 100%;
-  background: linear-gradient(0deg, rgba(106, 29, 137, 0.6588235294), rgba(106, 29, 137, 0.6588235294)), url("../img/offer.jpg");
-  background-size: cover;
-}
-
 #offer .modal-header .close {
   position: absolute;
   right: 0;
   padding: 20px;
   margin: 0;
 }
+#offer .modal-dialog {
+  max-width: 500px;
+  margin: 1.75rem auto;
+}
 
+.modal.show .modal-dialog {
+  --webkit-transform: none;
+  transform: none;
+}
+
+.offer-content {
+  text-align: center;
+  width: 100%;
+  padding: 20px 10px 10px;
+  position: relative;
+  min-height: 100%;
+  background: linear-gradient(0deg, rgba(106, 29, 137, 0.6588235294), rgba(106, 29, 137, 0.6588235294)) url("../img/offer.jpg") no-repeat;
+  background-size: cover;
+}
 .offer-content h2, .offer-content .h2 {
   text-transform: uppercase;
   font-size: 50px;
 }
-
 .offer-content h2 small, .offer-content .h2 small, .offer-content h2 .small, .offer-content .h2 .small {
   display: block;
   font-size: 30px;
@@ -11770,7 +11765,7 @@ span.circle-tag > img, span.rectangle-tag > img, span.square-tag > img {
 
 #address-box .modal-content, #search-box .modal-content {
   min-height: 85vh;
-  background: #fbfbfc;
+  background: #f5f5f5;
 }
 
 #address-box .modal-header, #search-box .modal-header {
@@ -11779,7 +11774,6 @@ span.circle-tag > img, span.rectangle-tag > img, span.square-tag > img {
 }
 
 #address-box .modal-header .close, #search-box .modal-header .close {
-  margin: 0;
   display: block;
   width: 100%;
   text-align: left;
@@ -11789,7 +11783,7 @@ span.circle-tag > img, span.rectangle-tag > img, span.square-tag > img {
   font-size: 35px;
   font-weight: 200;
   line-height: 1;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
 }
 
 #address-box .modal-title, #search-box .modal-title {
@@ -14671,34 +14665,28 @@ and (.testimonial-wrapper .testimonial-box). named : %common-FF */
   top: 50%;
   transform: translate(0px, -50%);
 }
-
 .user-page .login-sec .login-box {
   max-width: 420px;
   width: auto;
   margin: 0 auto;
-  margin-top: 0px;
   box-shadow: 0 0 0 1px rgba(67, 41, 163, 0.08), 0 1px 5px 0 rgba(67, 41, 163, 0.08);
   border-radius: 3px;
   background: #fff;
   padding: 30px;
 }
-
 .user-page .login-sec .login-box .checkbox-reset {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .user-page .login-sec .login-box span.terms {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .user-page .login-sec .login-box span.terms a {
   margin: 0 3px;
 }
-
 .user-page .login-sec .login-box .form-group .field-icon {
   float: left;
   margin-left: -25px;

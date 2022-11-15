@@ -1,49 +1,52 @@
-
 /*=========================
 8. Login & register
 ===========================*/
+.user-page {
+  .login-sec {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translate(0px, -50%);
 
-.user-page .login-sec {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translate(0px, -50%);
-}
+    .login-box {
+      max-width: 420px;
+      width: auto;
+      margin: 0 auto;
+      box-shadow: 0 0 0 1px $purple-darken, 0 1px 5px 0 $purple-darken;
+      border-radius: 3px;
+      background: $white;
+      padding: 30px;
 
-.user-page .login-sec .login-box {
-  max-width: 420px;
-  width: auto;
-  margin: 0 auto;
-  margin-top: 0px;
-  box-shadow: 0 0 0 1px rgba(67, 41, 163, .08), 0 1px 5px 0 rgba(67, 41, 163, .08);
-  border-radius: 3px;
-  background: #fff;
-  padding: 30px;
-}
+      .checkbox-reset {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
 
-.user-page .login-sec .login-box .checkbox-reset {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+      span {
+        &.terms {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
 
-.user-page .login-sec .login-box span.terms {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+          a {
+            margin: 0 3px;
+          }
+        }
+      }
 
-.user-page .login-sec .login-box span.terms a {
-  margin: 0 3px;
-}
-
-.user-page .login-sec .login-box .form-group .field-icon {
-  float: left;
-  margin-left: -25px;
-  margin-top: -28px;
-  position: relative;
-  z-index: 2;
-  left: 36px;
-  cursor: pointer;
+      .form-group {
+        .field-icon {
+          float: left;
+          margin-left: -25px;
+          margin-top: -28px;
+          position: relative;
+          z-index: 2;
+          left: 36px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }

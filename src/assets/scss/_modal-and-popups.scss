@@ -1,82 +1,138 @@
 /*======================
 1.6 Modal & Popups
 ========================*/
+#offer {
 
-#offer .modal-dialog {
-  max-width: 500px;
-  margin: 1.75rem auto;
+  &.modal {
+    height: auto;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translate(0%, -50%);
+  }
+
+  .modal-header {
+    .close {
+      position: absolute;
+      right: 0;
+      padding: 20px;
+      margin: 0;
+    }
+  }
+
+  .modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+  }
 }
 
-.modal.show .modal-dialog {
-  -webkit-transform: none;
-  transform: none;
-}
-
-#offer.modal {
-  height: auto;
-  top: 50%;
-  left: 0%;
-  right: 0;
-  transform: translate(0%, -50%);
+.modal {
+  &.show {
+    .modal-dialog {
+      --webkit-transform: none;
+      transform: none;
+    }
+  }
 }
 
 .offer-content {
   text-align: center;
-  background-repeat: no-repeat;
   width: 100%;
   padding: 20px 10px 10px;
   position: relative;
   min-height: 100%;
-  background: linear-gradient(0deg, #6a1d89a8, #6a1d89a8), url('../img/offer.jpg');
+  background: linear-gradient(0deg, $pink-6a1d89a8, $pink-6a1d89a8) url('../img/offer.jpg') no-repeat;
   background-size: cover;
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 50px;
+
+    small {
+      display: block;
+      font-size: 30px;
+      text-transform: lowercase;
+    }
+  }
 }
 
-#offer .modal-header .close {
-  position: absolute;
-  right: 0;
-  padding: 20px;
-  margin: 0;
+#address-box {
+  .modal-header {
+    @extend %common-JJ;
+
+    .close {
+      @extend %common-KK;
+    }
+  }
+
+  .modal-content {
+    @extend %common-II;
+  }
+
+  .modal-title {
+    @extend %common-LL;
+  }
+
+  .modal-body {
+    @extend %common-MM;
+  }
 }
 
-.offer-content h2 {
-  text-transform: uppercase;
-  font-size: 50px;
+#search-box {
+  .modal-header {
+    @extend %common-JJ;
+
+    .close {
+      @extend %common-KK;
+    }
+  }
+
+  .modal-content {
+    @extend %common-II;
+  }
+
+  .modal-title {
+    @extend %common-LL;
+  }
+
+  .modal-body {
+    @extend %common-MM;
+  }
 }
 
-.offer-content h2 small {
-  display: block;
-  font-size: 30px;
-  text-transform: lowercase;
-}
-
-#address-box .modal-content, #search-box .modal-content {
+//وراثت ها
+//common style between (#address-box .modal-content) and (#search-box .modal-content) named : %common-II
+%common-II {
   min-height: 85vh;
-  background: #fbfbfc;
+  background: $white-f5f5f5;
 }
 
-#address-box .modal-header, #search-box .modal-header {
+//common style between (#address-box .modal-header) and (#search-box .modal-header) named : %common-JJ
+%common-JJ {
   display: block;
-  box-shadow: 0 0 0 1px rgba(67, 41, 163, .08), 0 1px 5px 0 rgba(67, 41, 163, .08);
+  box-shadow: 0 0 0 1px $purple-darken, 0 1px 5px 0 $purple-darken;
 }
 
-#address-box .modal-header .close, #search-box .modal-header .close {
-  margin: 0;
+//common style between (#address-box .modal-header .close) and (#search-box .modal-header .close) named : %common-KK
+%common-KK {
   display: block;
   width: 100%;
   text-align: left;
-  color: #ff0018;
+  color: $red-ff0018;
   opacity: 1;
   padding: 0;
   font-size: 35px;
   font-weight: 200;
   line-height: 1;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
 }
 
-#address-box .modal-title, #search-box .modal-title {
+//common style between (#address-box .modal-title) and (#search-box .modal-title) named : %common-LL
+%common-LL {
   font-size: 20px;
 }
 
-#address-box .modal-body, #search-box .modal-body {
+//common style between (#address-box .modal-body) and (#search-box .modal-body) named : %common-MM
+%common-MM {
   padding: 1rem 0;
 }
