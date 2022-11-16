@@ -3,75 +3,75 @@
 ====================*/
 
 .bg-light-white {
-  background-color: #f4f4f4;
+  background-color: $white-f5f5f5;
 }
 
 .bg-light-theme {
-  background-color: #fbfbfc;
+  background-color: $white-f5f5f5;
 }
 
 .bg-light-green {
-  background-color: #ff0018;
+  background-color: $red-ff0018;
 }
 
 .bg-red {
-  background-color: #ff0000;
+  background-color: $red-ff0000;
 }
 
 .bg-gradient-red {
-  background-image: linear-gradient(to right, #f20000, #a20000);
+  background-image: linear-gradient(to right, $red-f20000, $red-a20000);
 }
 
 .bg-yellow {
-  background-color: #ffc000;
+  background-color: $yellow-ffc000;
 }
 
 .bg-green {
-  background-color: #4aa110;
+  background-color: $green-4aa110;
 }
 
 .bg-gradient-green {
-  background-image: linear-gradient(to bottom, #499a14, #476d2d);
+  background-image: linear-gradient(to bottom, $green-499a14, $green-476d2d);
 }
 
 .bg-gradient-orange {
-  background-image: linear-gradient(to bottom, #c55a11, #ed7d31);
+  background-image: linear-gradient(to bottom, $orange-c55a11, $orange-ed7d31);
 }
 
 .bg-black {
-  background-color: #000;
+  background-color: $black;
 }
 
 /*Colors*/
 
 .text-light-black {
-  color: #000000de;
+  color: $black;
 }
 
 .text-orange {
-  color: #fb6100;
+  color: $orange-fb6100;
 }
 
 .text-custom-white {
-  color: #ffffff;
+  color: $white;
 }
 
 .text-light-white {
-  color: #6b6b83;
+  color: $gray-6b6b83;
 }
 
 .text-dark-white {
-  color: #00000059;
+  color: $gray-00000059;
 }
 
 .text-yellow {
-  color: #fcb71b;
+  color: $yellow-fcb71b;
 }
 
 .text-light-green {
-  color: #ff0018;
+  color: $red-ff0018;
 }
 
 .text-success {
-  color: #13aa37;
+  color: $green-13aa37;
 }

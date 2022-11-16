@@ -3,9 +3,9 @@
 ========================*/
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px;
-  font-family: iransans-light;
+  font-family: $font-iranSans-light;
   font-weight: 500;
-  color: #000000de;
+  color: $black;
 }
 
 h1 {
@@ -37,19 +37,21 @@ p {
   font-size: 14px;
   line-height: 1.8;
   margin-bottom: 10px;
-  font-family: iransans-light;
+  font-family: $font-iranSans-light;
 }
 
 a {
-  color: #ff0018;
+  color: $red-ff0018;
   text-decoration: none;
   transition: 0.5s;
-}
 
-a:focus, a:hover {
-  color: #bc2634;
-  text-decoration: none;
-  transition: 0.5s;
+  &:focus, &:hover {
+  {
+    color: $red-bc2634;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  }
 }
 
 dl, ol, ul {
@@ -59,34 +61,35 @@ dl, ol, ul {
 }
 
 ul li, ol li {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   position: relative;
   list-style: none;
 }
 
 blockquote {
-  background-color: #f4f4f4;
+  background-color: $white-f5f5f5;
   position: relative;
   padding: 3rem;
   margin: 2rem 0;
-  border: #4329a333 solid 1px;
-}
+  border: 1px solid $purple-4329a333;
 
-blockquote p {
-  font-size: 32px;
-  line-height: 45px;
-  font-style: normal;
-  margin: 0;
-  word-break: break-word;
-  text-align: center;
-}
+  p {
+    font-size: 32px;
+    line-height: 45px;
+    font-style: normal;
+    margin: 0;
+    word-break: break-word;
+    text-align: center;
+  }
 
-blockquote h6 {
-  color: #000;
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 16px;
+  h6 {
+    color: $black;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+
 }
 
 img {
@@ -96,67 +99,72 @@ img {
   border-radius: 3px;
 }
 
-table th, table td {
-  border: 1px solid #ccc;
-  padding: 15px;
-}
-
 table {
-  border: 1px solid #ccc;
+  border: 1px solid $gray-C4CAD2;
   padding: 15px;
+
+  th, td {
+    border: 1px solid $gray-C4CAD2;
+    padding: 15px;
+  }
 }
 
-.fs-12 {
-  font-size: 12px;
+.fs {
+  &-12 {
+    font-size: 12px;
+  }
+
+  &-14 {
+    font-size: 14px;
+  }
+
+  &-16 {
+    font-size: 16px;
+  }
+
+  &-18 {
+    font-size: 18px;
+  }
 }
 
-.fs-14 {
-  font-size: 14px;
+.fw {
+  &-100 {
+    font-weight: 100;
+  }
+
+  &-400 {
+    font-weight: 400;
+  }
+
+  &-500 {
+    font-weight: 500;
+  }
+
+  &-600 {
+    font-weight: 600;
+  }
+
+  &700 {
+    font-weight: 900;
+  }
 }
 
-.fs-16 {
-  font-size: 16px;
-}
-
-.fs-18 {
-  font-size: 18px;
-}
-
-.fw-100 {
-  font-weight: 100;
-}
-
-.fw-400 {
-  font-weight: 400;
-}
-
-.fw-500 {
-  font-weight: 500;
-}
-
-.fw-600 {
-  font-weight: 600;
-}
-
-.fw-700 {
-  font-weight: 900;
-}
 
 .title {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
-  font-family: iransans-medium;
+  font-family: $font-iranSans-medium;
 }
 
 .title-2 {
   display: flex;
   align-items: baseline;
-}
 
-.title-2 small {
-  margin-left: 30px;
+  small {
+    margin-left: 30px;
+  }
 }
 
 /*pagination*/
@@ -166,15 +174,33 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .page-link {
+    padding: 10px 20px;
+    color: $red-ff0018;
+  }
+
+  .page-item {
+    .page-link {
+      &:hover {
+        @extend %common-BBBB;
+      }
+    }
+
+    &.active {
+      .page-link {
+        @extend %common-BBBB;
+      }
+    }
+  }
 }
 
-.custom-pagination .page-link {
-  padding: 10px 20px;
-  color: #ff0018;
-}
-
-.custom-pagination .page-item .page-link:hover, .custom-pagination .page-item.active .page-link {
-  background: #ff0018;
-  color: #fff;
-  border-color: #ff0018;
+//وراثت ها
+//common style between (.custom-pagination .page-item .page-link:hover)
+//and (.custom-pagination .page-item.active .page-link)
+//named : %common-BBBB
+%common-BBBB {
+  background: $red-ff0018;
+  color: $white;
+  border-color: $red-ff0018;
 }
