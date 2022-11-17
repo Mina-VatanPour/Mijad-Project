@@ -45,12 +45,11 @@ a {
   text-decoration: none;
   transition: 0.5s;
 
-  &:focus, &:hover {
+  &:focus, &:hover
   {
     color: $red-bc2634;
     text-decoration: none;
     transition: 0.5s;
-  }
   }
 }
 

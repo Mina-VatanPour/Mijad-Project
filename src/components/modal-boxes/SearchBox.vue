@@ -4,8 +4,10 @@
 
 <script>
 export default {
-  name: "FooterView",
-};
+  name: "SearchBox"
+}
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>

@@ -4,8 +4,10 @@
 
 <script>
 export default {
-  name: "FooterView",
-};
+  name: "PreviousOrder"
+}
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>

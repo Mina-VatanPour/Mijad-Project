@@ -4,8 +4,10 @@
 
 <script>
 export default {
-  name: "FooterView",
-};
+  name: "CategorySection"
+}
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>
