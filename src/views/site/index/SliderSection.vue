@@ -1,20 +1,25 @@
 <template>
   <section class="about-us-slider swiper-container p-relative">
     <Swiper
-        :slides-per-view="1"
-        :modules="modules"
-        :autoplay="true"
-        :navigation="true"
-        :parallax="true"
-        :loop="true"
-        @swiper="onSwiper"
-        @slideChange="onSlideChange"
+      :slides-per-view="1"
+      :modules="modules"
+      :autoplay="true"
+      :navigation="true"
+      :parallax="true"
+      :loop="true"
+      @swiper="onSwiper"
+      @slideChange="onSlideChange"
     >
-      <SwiperSlide v-for="(bannerItem, index) in bannersSlideItems" :key="index">
+      <SwiperSlide
+        v-for="(bannerItem, index) in bannersSlideItems"
+        :key="index"
+      >
         <img
-            :src="require('@/assets/img/about/blog/1920x700/' + bannerItem.imgName)"
-            class="img-fluid full-width"
-            alt="Banner"
+          :src="
+            require('@/assets/img/about/blog/1920x700/' + bannerItem.imgName)
+          "
+          class="img-fluid full-width"
+          alt="Banner"
         />
         <div class="transform-center">
           <div class="container">
@@ -28,7 +33,7 @@
                     {{ bannerItem.description }}
                   </h3>
                   <a :href="bannerItem.href" class="btn-second btn-submit"
-                  >بیشتر بدانید</a
+                    >بیشتر بدانید</a
                   >
                 </div>
               </div>
@@ -42,10 +47,10 @@
 </template>
 
 <script>
-import {ref} from "vue";
-import {Autoplay, Navigation, Parallax} from "swiper";
+import { ref } from "vue";
+import { Autoplay, Navigation, Parallax } from "swiper";
 // Import Swiper Vue.js components
-import {Swiper, SwiperSlide} from "swiper/vue";
+import { Swiper, SwiperSlide } from "swiper/vue";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/autoplay";
@@ -90,7 +95,10 @@ export default {
       console.log("slide change");
     };
     return {
-      bannersSlideItems, onSwiper, onSlideChange, modules: [Autoplay, Navigation, Parallax]
+      bannersSlideItems,
+      onSwiper,
+      onSlideChange,
+      modules: [Autoplay, Navigation, Parallax],
     };
   },
 };

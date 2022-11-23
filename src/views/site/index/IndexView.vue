@@ -2,7 +2,7 @@
   <HeaderView />
   <SliderSection />
   <BrowseCategory />
-  <PreviousOrder />
+<!--  <PreviousOrder />-->
   <ExploreCollection />
   <FooterView />
   <!--  <AddressBox />-->
