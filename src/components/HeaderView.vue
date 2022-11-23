@@ -8,13 +8,13 @@
             <!-- logo -->
             <div class="logo mainNavCol p-3">
               <router-link
-                  :to="{ name: 'home' }"
-                  class="d-flex justify-content-center"
+                :to="{ name: 'home' }"
+                class="d-flex justify-content-center"
               >
                 <img
-                    :src="require('@/assets/img/my-logo.png')"
-                    class="img-fluid w-50"
-                    alt="Logo"
+                  :src="require('@/assets/img/my-logo.png')"
+                  class="img-fluid w-50"
+                  alt="Logo"
                 />
               </router-link>
             </div>
@@ -52,9 +52,9 @@
                   <div class="col-lg-6 col-md-8">
                     <div class="search-box padding-10">
                       <input
-                          type="text"
-                          class="form-control border rounded shadow-sm"
-                          placeholder=" جستجو کنید ( پیتزا، کباب و ... )"
+                        type="text"
+                        class="form-control border rounded shadow-sm"
+                        placeholder=" جستجو کنید ( پیتزا، کباب و ... )"
                       />
                     </div>
                   </div>
@@ -73,14 +73,11 @@
               <div class="catring parent-megamenu fw-bold">
                 <a href="#" @click="showPages = !showPages">
                   <span class="fw-bold"
-                  >صفحات<i class="fas fa-caret-down me-2"></i
+                    >صفحات<i class="fas fa-caret-down me-2"></i
                   ></span>
                   <i class="fas fa-bars"></i>
                 </a>
-                <div
-                    class="megamenu mt-md-3"
-                    :class="{ show: showPages }"
-                >
+                <div class="megamenu mt-md-3" :class="{ show: showPages }">
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="row">
@@ -88,14 +85,14 @@
                           <div class="ex-collection-box h-100">
                             <a href="#">
                               <img
-                                  :src="require('@/assets/img/nav-1.jpg')"
-                                  class="img-fluid full-width h-100"
-                                  alt="image"
+                                :src="require('@/assets/img/nav-1.jpg')"
+                                class="img-fluid full-width h-100"
+                                alt="image"
                               />
                             </a>
                             <div class="category-type overlay padding-15">
                               <a href="restaurant.html" class="category-btn"
-                              >بالاترین رتبه</a
+                                >بالاترین رتبه</a
                               >
                             </div>
                           </div>
@@ -103,27 +100,27 @@
                         <div class="col-lg-8 col-md-7">
                           <div class="row">
                             <div
-                                class="col-lg-3 col-sm-6"
-                                v-for="(menuTitle, index) in menuTitles"
-                                :key="index"
+                              class="col-lg-3 col-sm-6"
+                              v-for="(menuTitle, index) in menuTitles"
+                              :key="index"
                             >
                               <div class="menu-style">
                                 <div class="menu-title">
                                   <h6 class="cat-name">
                                     <a href="#" class="text-light-black">{{
-                                        menuTitle.catName
-                                      }}</a>
+                                      menuTitle.catName
+                                    }}</a>
                                   </h6>
                                 </div>
                                 <ul>
                                   <li
-                                      v-for="(li, index) in menuTitle.lis"
-                                      :key="index"
+                                    v-for="(li, index) in menuTitle.lis"
+                                    :key="index"
                                   >
                                     <a
-                                        :href="li.href"
-                                        class="text-light-white fw-500"
-                                    >{{ li.title }}
+                                      :href="li.href"
+                                      class="text-light-white fw-500"
+                                      >{{ li.title }}
                                     </a>
                                   </li>
                                 </ul>
@@ -147,19 +144,26 @@
               <!-- mobile search -->
               <!-- user account -->
               <div class="user-details p-relative">
-                <a href="#" class="text-light-white fw-500" @click="showDetail = !showDetail">
+                <a
+                  href="#"
+                  class="text-light-white fw-500"
+                  @click="showDetail = !showDetail"
+                >
                   <img
-                      :src="require('@/assets/img/user-1.png')"
-                      class="rounded-circle"
-                      alt="userimg"
+                    :src="require('@/assets/img/user-1.png')"
+                    class="rounded-circle"
+                    alt="userimg"
                   />
                   <span>سلام، مینا</span>
                 </a>
-                <div class="user-dropdown rounded shadow-sm" :class="{show : showDetail}">
+                <div
+                  class="user-dropdown rounded shadow-sm"
+                  :class="{ show: showDetail }"
+                >
                   <ul class="pt-sm-0">
                     <li
-                        v-for="(userItem, index) in userDetailsDropdown"
-                        :key="index"
+                      v-for="(userItem, index) in userDetailsDropdown"
+                      :key="index"
                     >
                       <a :href="userItem.href">
                         <div class="icon"><i :class="userItem.icon"></i></div>
@@ -179,19 +183,19 @@
                   <span class="user-alert-notification"></span>
                 </a>
                 <div
-                    class="notification-dropdown rounded shadow-sm"
-                    v-for="(productDetail, index) in notificationsDetail"
-                    :key="index"
+                  class="notification-dropdown rounded shadow-sm"
+                  v-for="(productDetail, index) in notificationsDetail"
+                  :key="index"
                 >
                   <div class="product-detail">
                     <a :href="productDetail.href">
                       <div class="img-box">
                         <img
-                            :src="
+                          :src="
                             require('@/assets/img/' + productDetail.picture)
                           "
-                            class="rounded"
-                            alt="image"
+                          class="rounded"
+                          alt="image"
                         />
                       </div>
                       <div class="product-about">
@@ -207,23 +211,23 @@
                   <div class="rating-box">
                     <p class="text-light-black">سفارش آخرتان چطور بود؟.</p>
                     <span class="text-dark-white"
-                    ><i class="fas fa-star"></i
+                      ><i class="fas fa-star"></i
                     ></span>
                     <span class="text-dark-white"
-                    ><i class="fas fa-star"></i
+                      ><i class="fas fa-star"></i
                     ></span>
                     <span class="text-dark-white"
-                    ><i class="fas fa-star"></i
+                      ><i class="fas fa-star"></i
                     ></span>
                     <span class="text-dark-white"
-                    ><i class="fas fa-star"></i
+                      ><i class="fas fa-star"></i
                     ></span>
                     <span class="text-dark-white"
-                    ><i class="fas fa-star"></i
+                      ><i class="fas fa-star"></i
                     ></span>
                     <cite class="text-light-white">{{
-                        productDetail.date
-                      }}</cite>
+                      productDetail.date
+                    }}</cite>
                   </div>
                 </div>
               </div>
@@ -231,39 +235,39 @@
               <!-- user cart -->
               <div class="cart-btn cart-dropdown">
                 <a
-                    href="#"
-                    class="text-light-green fw-700"
-                    @click="showCard = !showCard"
+                  href="#"
+                  class="text-light-green fw-700"
+                  @click="showCard = !showCard"
                 >
                   <i class="fas fa-shopping-bag"></i>
                   <span class="user-alert-cart">{{
-                      cartsDetailBoxes.length
-                    }}</span>
+                    cartsDetailBoxes.length
+                  }}</span>
                 </a>
                 <div
-                    class="cart-detail-box shadow-sm px-2"
-                    :class="{ show: showCard }"
+                  class="cart-detail-box shadow-sm px-2"
+                  :class="{ show: showCard }"
                 >
                   <div class="card">
                     <div class="card-header padding-15">سبد خرید</div>
                     <div class="card-body no-padding">
                       <div
-                          class="cat-product-box"
-                          v-for="(detailBox, index) in cartsDetailBoxes"
-                          :key="index"
+                        class="cat-product-box"
+                        v-for="(detailBox, index) in cartsDetailBoxes"
+                        :key="index"
                       >
                         <div class="cat-product">
                           <div class="cat-name">
                             <a :href="detailBox.href">
                               <p class="text-light-green">
                                 <span class="text-dark-white">{{
-                                    detailBox.number
-                                  }}</span>
+                                  detailBox.number
+                                }}</span>
                                 {{ detailBox.title }}
                               </p>
                               <span class="text-light-white">{{
-                                  detailBox.restaurantName
-                                }}</span>
+                                detailBox.restaurantName
+                              }}</span>
                             </a>
                           </div>
                           <div class="delete-btn">
@@ -292,9 +296,9 @@
                     </div>
                     <div class="card-footer padding-15">
                       <a
-                          href="checkout.html"
-                          class="btn-first green-btn text-custom-white full-width fw-500"
-                      >ادامه خرید</a
+                        href="checkout.html"
+                        class="btn-first green-btn text-custom-white full-width fw-500"
+                        >ادامه خرید</a
                       >
                     </div>
                   </div>
@@ -344,7 +348,7 @@
 </template>
 
 <script>
-import {ref} from "vue";
+import { ref } from "vue";
 // import AddressBox from "@/components/modal-boxes/AddressBox";
 
 export default {
