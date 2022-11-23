@@ -1,13 +1,9 @@
-<template>
-
-</template>
+<template>B</template>
 
 <script>
 export default {
-  name: "CategorySection"
-}
+  name: "CategorySection",
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

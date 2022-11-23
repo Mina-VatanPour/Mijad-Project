@@ -2,6 +2,8 @@
 
 footer {
   border-top: 1px solid $purple-dark;
+  background-color: $black-87;
+
 
   .ft-logo-box {
     display: flex;
@@ -17,7 +19,7 @@ footer {
     display: block;
     align-items: center;
     height: 100%;
-    padding-top: 80px;
+    padding-top: 30px;
 
     ul {
       display: flex;
@@ -93,7 +95,7 @@ footer {
   }
 
   .footer-contact {
-    @extend %common-M;
+    //@extend %common-M;
 
     ul {
       @extend %common-N;
@@ -169,7 +171,7 @@ footer {
 /*common style between (footer .footer-links)
  and ( footer .footer-contact). named : %common-M */
 %common-M {
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 /*common style between (footer .footer-links ul)

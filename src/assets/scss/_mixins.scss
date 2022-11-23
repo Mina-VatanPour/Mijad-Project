@@ -1,5 +1,4 @@
 //use in _checkout.scss and _add-restaurent.scss files for first time :)
-
 @mixin liAndBeforeCommonStyle {
   display: inline-block;
   position: relative;
@@ -16,4 +15,17 @@
     top: 35px;
     left: 85px;
   }
+}
+
+//use in _navigation.scss  for second time :)
+@mixin icon-f002-f3c5{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  position: absolute;
 }

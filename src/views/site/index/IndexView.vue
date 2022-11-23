@@ -1,12 +1,12 @@
 <template>
-  <HeaderView/>
-  <SliderSection/>
-  <BrowseCategory/>
-  <PreviousOrder/>
-  <ExploreCollection/>
-  <FooterView/>
-  <AddressBox/>
-  <SearchBox/>
+  <HeaderView />
+  <SliderSection />
+  <BrowseCategory />
+  <PreviousOrder />
+  <ExploreCollection />
+  <FooterView />
+  <!--  <AddressBox />-->
+  <SearchBox />
 </template>
 
 <script>
@@ -16,9 +16,8 @@ import BrowseCategory from "@/views/site/index/BrowseCategory";
 import PreviousOrder from "@/views/site/index/PreviousOrder";
 import ExploreCollection from "@/views/site/index/ExploreCollection";
 import FooterView from "@/components/FooterView.vue";
-import AddressBox from "@/components/modal-boxes/AddressBox";
+// import AddressBox from "@/components/modal-boxes/AddressBox";
 import SearchBox from "@/components/modal-boxes/SearchBox";
-
 
 export default {
   name: "IndexView",
@@ -29,9 +28,9 @@ export default {
     PreviousOrder,
     ExploreCollection,
     FooterView,
-    AddressBox,
+    // AddressBox,
     SearchBox,
-  }
+  },
 };
 </script>
 

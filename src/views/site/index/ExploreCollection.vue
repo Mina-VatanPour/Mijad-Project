@@ -1,13 +1,9 @@
-<template>
-
-</template>
+<template>E</template>
 
 <script>
 export default {
-  name: "ExploreCollection"
-}
+  name: "ExploreCollection",
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

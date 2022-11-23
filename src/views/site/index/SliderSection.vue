@@ -1,13 +1,22 @@
 <template>
-
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
 </template>
 
 <script>
 export default {
-  name: "SliderSection"
-}
+  name: "SliderSection",
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

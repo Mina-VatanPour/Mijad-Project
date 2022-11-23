@@ -186,7 +186,6 @@ Version: 1.0.0
       },
     },
   });
-
   // category-slider
   var swiper = new Swiper(".category-slider", {
     slidesPerView: 2,

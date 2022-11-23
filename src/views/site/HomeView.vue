@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <IndexView/>
+    <IndexView />
   </div>
 </template>
 

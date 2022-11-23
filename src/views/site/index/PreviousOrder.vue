@@ -1,13 +1,9 @@
-<template>
-
-</template>
+<template>P</template>
 
 <script>
 export default {
-  name: "PreviousOrder"
-}
+  name: "PreviousOrder",
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
