@@ -2,7 +2,7 @@
   <HeaderView />
   <SliderSection />
   <BrowseCategory />
-<!--  <PreviousOrder />-->
+  <!--  <PreviousOrder />-->
   <ExploreCollection />
   <FooterView />
   <!--  <AddressBox />-->
@@ -13,7 +13,7 @@
 import HeaderView from "@/components/HeaderView.vue";
 import SliderSection from "@/views/site/index/SliderSection";
 import BrowseCategory from "@/views/site/index/BrowseCategory";
-import PreviousOrder from "@/views/site/index/PreviousOrder";
+// import PreviousOrder from "@/views/site/index/PreviousOrder";
 import ExploreCollection from "@/views/site/index/ExploreCollection";
 import FooterView from "@/components/FooterView.vue";
 // import AddressBox from "@/components/modal-boxes/AddressBox";
@@ -25,7 +25,7 @@ export default {
     HeaderView,
     SliderSection,
     BrowseCategory,
-    PreviousOrder,
+    // PreviousOrder,
     ExploreCollection,
     FooterView,
     // AddressBox,
